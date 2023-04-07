@@ -40,9 +40,6 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|4129558506dc078c03679ba362acda4755457742
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|dcfdc04b4e0c6e6a4ffa60e1694268bd0327e65c
 
-# ANT+ - from S62Pro
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so|87dc1a131534659173e71e108e7a3ffe6325845f
-
 # Audio - from S62Pro RKQ1.210406.002
 vendor/lib/libacdb-fts.so|96db6fe2e443326705a37ac6e2e394f03144a386
 vendor/lib/libacdbloader.so|4d0743fe7f3eb1d2318feafc06363ffb527ca942
