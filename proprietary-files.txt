@@ -95,22 +95,26 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|ece3dafc4447e8302109851c3a
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
-# CDSP - from S62Pro RKQ1.210406.002
+# Camera EIS - from LA.UM.10.2.1.r1-03400-sdm660.0
+vendor/lib/libmmcamera_ppeiscore.so|072a47bac12e7cd9737ca235b4f254989dc013f0
+
+# CDSP - from LA.UM.10.2.1.r1-03400-sdm660.0
 system_ext/lib/libcdsprpc_system.so|78b3fc57248a97ad0498a070487d58875aa2fe3b
 system_ext/lib64/libcdsprpc_system.so|2fddb95160c8d803d28ed3b4b9f4146812d65280
 vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
-vendor/lib/libcdsp_default_listener.so|1c24530e998d6ea908b86afd20470e7e3d0a48c0
+vendor/lib/libcdsp_default_listener.so|c280d84c9cd8ecf9e80bc1745dfcfc4971226d83
 vendor/lib/libcdsprpc.so|4ef30602663e13d44e1c7dd09db927fa4e6947ae
 vendor/lib/libfastrpc_utf_stub.so|945a41ea68452806d1a5add3584d34b30c7f9a95
-vendor/lib/libsysmon_cdsp_skel.so|8a23e64a696517679e7c336fc31f3b912f4ca32a
-vendor/lib64/libcdsp_default_listener.so|96d722b324c4d1a554d0f018d8cbbb8c4e4519b8
+vendor/lib/libsysmon_cdsp_skel.so|c6dddba8637ad468de69bd329d2948721c537801
+vendor/lib64/libcdsp_default_listener.so|49de35be8f90e282de225596ab90661fa8ac4422
 vendor/lib64/libcdsprpc.so|891066a404b155c545ff7f4bf23cb7e042f29f28
+vendor/lib64/libcdsp_default_listener.so|96d722b324c4d1a554d0f018d8cbbb8c4e4519b8
 vendor/lib64/libfastrpc_utf_stub.so|15243b9539bb74069d6ee59bd70340b0ea0ec338
-vendor/lib64/libsysmon_cdsp_skel.so|6b07100c3294c76402e2d064d463629c9468d6a9
+vendor/lib64/libsysmon_cdsp_skel.so|8a951e039071107317e0e7541ff4df7ad35d87ad
 
-# Charger - from S62Pro RKQ1.210406.002
-vendor/bin/hvdcp_opti|0af1d3a59fd10acd7a614662c341421d9267014c
+# Charger - from LA.UM.10.2.1.r1-03400-sdm660.0
+vendor/bin/hvdcp_opti|45f500aa4816c87de222ee7eb33655f0e83e392c
 
 # CNE - from S62Pro
 system_ext/framework/com.quicinc.cne.api-V1.0-java.jar|31ba1bfae2830f87e77844cfb96913271dac0925
@@ -238,14 +242,8 @@ vendor/lib64/libSecureUILib.so|b98555b76083a897fc9bbfc27778750d2d47817a
 vendor/lib64/libssd.so|774488b88c37053067b3cad551ac95360c03edd3
 vendor/lib64/libStDrvInt.so|6091f1f496b87730f9a77e9ede504c4fa99c608a
 
-# DSP - from S62Pro RKQ1.210406.002
-system_ext/lib/libmdsprpc_system.so|5f40a5c3944e358bd06dec2e8f38f29438cc448a
-system_ext/lib64/libmdsprpc_system.so|b5ea6a8e2b9d99cb85b6d313a8d7bf2a28c82c7f
-system_ext/lib/libsdsprpc_system.so|4da90922c4a78cd2887bc507a58b961e1f14e434
-system_ext/lib64/libsdsprpc_system.so|cde1ea070efa2f8ab4b3b5dfeeb26b732ce1017d
-system_ext/lib/vendor.qti.hardware.dsp@1.0.so|4a5b835bc386a71f1922b6ffa7a58947e4930c19
-system_ext/lib64/vendor.qti.hardware.dsp@1.0.so|cb00ecf199d18de8e2ce3ca4e75e2042504fa772
-vendor/bin/dspservice|a8eb76af6150bbf29c12b76b00ab469b99f563f7
+# DSP - from LA.UM.10.2.1.r1-03400-sdm660.0
+vendor/bin/dspservice|f194ad65a930f1ac1a7fdfefc637c0531d185e89
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
 vendor/lib/vendor.qti.hardware.dsp@1.0.so|f902e821229cd1fff50ebfba99b0a068cbf74a56
@@ -363,33 +361,52 @@ vendor/lib/libgcs.so|136b036d645ce31c3265cf2aed00c472ecec37e4
 vendor/lib/liblistensoundmodel2.so|375948b769905112429ae4fb2979be0b1e363950
 vendor/lib/libsmwrapper.so|0fbf611c9a597f7c70bfd2363dfc7f465d1dafd5
 
-# Media - from S62Pro RKQ1.210406.002
+# Media - from LA.UM.10.2.1.r1-03400-sdm660.0
 lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
 lib/libOmxMux.so|66ccc804301bccfbd17afb39a60131dd1a3fa9bc
-system_ext/lib/libmmosal.so|d6e37a06ba103cd55208d74c32be47cea84d4009
-system_ext/lib/libmmparser_lite.so|bc55c2911e7283992c8c2c67f651577743430fb6
-system_ext/lib64/libmmosal.so|d0f37596108fb90b129edec4c6e8ba3648733498
+lib64/libFileMux.so|8b31ad6706780a8e5225817d8bf8b683ba1523c5
+lib64/libOmxMux.so|3c2fef1fc174bd93ebdc4cbeca9c4acc3731222e
+system_ext/lib/libmmosal.so|d485ea00eea93f22f3bb9738c24f52711399689f
+system_ext/lib/libmmparser_lite.so|7264378fe6f12ef8a66d8ce1d970dcf1664b6e2d
+system_ext/lib64/libmmosal.so|6962f780fbba52f4c057e05f4ccadccadf4e690f
+system_ext/lib64/libmmparser_lite.so|a146ac76b5919cbe5d4e635c63e83ec74168d7d1
 vendor/lib/libAlacSwDec.so|3a6d7dae2808dbe111ff4449b4e1e82560466ef3
 vendor/lib/libApeSwDec.so|ff14ad2ebbabcd89278830d817e9aa6bdcb1799a
 vendor/lib/libdsd2pcm.so|f9d2f26315764c27137bc375bb85b20fabe66ff9
 vendor/lib/libFlacSwDec.so|707dbc6b5d2890dc3bba22c00b372f0973baebda
 vendor/lib/libI420colorconvert.so|c8e9a1fb33ae50f5b29c892c6edca2f7d9524af5
-vendor/lib/libmm-color-convertor.so|063b3772fb4c5b85877c35a50e667540cde0c7d6
-vendor/lib/libmmosal.so|a2203f5be5dc1ee10d2f5da8f167a46acb0a660e
-vendor/lib/libOmxAacDec.so|3bcfed25d66aab024faf8dbb9a06ce98270c24b6
-vendor/lib/libOmxAlacDec.so|183cda27aaf922689c557cd9a76b68938e1748c9
+vendor/lib/libmmosal.so|9309b491b033caa895a45bf769ed5af59adf1a2b
+vendor/lib/libOmxAacDec.so|59bca3949a893cc9b70ac432b87b4c656fffa4dd
+vendor/lib/libOmxAlacDec.so|b1c4795012458fc5a569be5e930ceb5603c0c88c
 vendor/lib/libOmxAlacDecSw.so|ff4b38dbead17dcd0c9a045f109fa4e92ca2992a
-vendor/lib/libOmxAmrDec.so|ebe524b6682f7a9460078a1aa2b986c2c3430b68
-vendor/lib/libOmxAmrwbplusDec.so|ac542cb28956ccab59f9491bacebc96f50a80309
-vendor/lib/libOmxApeDec.so|dcde109eb585c194fdd80c1fe2d1b28614cd68a8
+vendor/lib/libOmxAmrDec.so|cf8cf5f1664cea77c48db08785d3191958b772be
+vendor/lib/libOmxAmrwbplusDec.so|8a282320d05d05eac09fabcd69209bce80540ebf
+vendor/lib/libOmxApeDec.so|9f10c570f456b65b2b2dfcce3fe0f6fc35196d48
 vendor/lib/libOmxApeDecSw.so|1014274fe2ad40b361a3adecae258161287500dc
 vendor/lib/libOmxDsdDec.so|d265762dfc714d51379a27970b05f325dbe412da
 vendor/lib/libOmxEvrcDec.so|28b401779d9ee45b0e94415faf9ac34c6fd200f0
-vendor/lib/libOmxG711Dec.so|98cd3445efe4cdc5a92672de3e749d71e56f7466
+vendor/lib/libOmxG711Dec.so|c952f9d05cf465f622aa00f9640f616c3f2a2a40
 vendor/lib/libOmxQcelp13Dec.so|ee6ede27923f04f4bb03b101bbf302e4df782945
 vendor/lib/libOmxVideoDSMode.so|84c632ef31c4dd88c5e08f92ba02e3f29df09b35
-vendor/lib/libOmxWmaDec.so|7fe5458ba5e19cd4c8422e910acbe6a6f6574c94
-vendor/lib64/libmmosal.so|595faff0767dc2bd0a344a98ab65a239bed14826
+vendor/lib/libOmxWmaDec.so|a664af6f1be984747ce5101881696e126ca3e098
+vendor/lib/libmm-color-convertor.so|063b3772fb4c5b85877c35a50e667540cde0c7d6
+vendor/lib64/libAlacSwDec.so|9fbfad65ffca33e1ac480e9cb056467ac75a6d5a
+vendor/lib64/libApeSwDec.so|76d3cc02ca1c3cdc3c71e57dc6e53027d2bf3d37
+vendor/lib64/libFlacSwDec.so|002aa39927e75568efb81c7ae3a044c694babfc3
+vendor/lib64/libI420colorconvert.so|b3eb95a4e43763c73ea8d4ea112fb683b69ed42b
+vendor/lib64/libmmosal.so|fc4fdcc1f8d2fd75c95da4691c9511975f3b5bf3
+vendor/lib64/libOmxAacDec.so|f17b7e219fffda2069371222792b560619878816
+vendor/lib64/libOmxAlacDec.so|828edcaa01f477359a9a6daf0cea6d5cb74f6db1
+vendor/lib64/libOmxAlacDecSw.so|159ea5d27936611107adf7355db760819bded68f
+vendor/lib64/libOmxAmrDec.so|33b1a5d9dc68cd3cf71fe7895c0b637574358201
+vendor/lib64/libOmxAmrwbplusDec.so|2afc34c8f03890d4081f015b0dfdfd8cf5d302b8
+vendor/lib64/libOmxApeDec.so|cdcb7d31c8b15d3d6aa983bcd614dd79a41e71fd
+vendor/lib64/libOmxApeDecSw.so|1536b0c27fd161e845f6615f73792fa66cf7027e
+vendor/lib64/libOmxEvrcDec.so|8a27c85dd54f269a9ba6b41f3a1c1b63e9ae2ea9
+vendor/lib64/libOmxG711Dec.so|e47603c64b97947edc80d4acfb0ef2845d2435e8
+vendor/lib64/libOmxQcelp13Dec.so|5a8e892912cd56c74b72420ea4fea62918bf260e
+vendor/lib64/libOmxWmaDec.so|12f994f034be6249acf8f25306bce4a38405e099
+vendor/lib64/libmm-color-convertor.so|d7404046e5863a87922b35c3ff3edc5e76d6c249
 
 # Mlipay - from wayne V11.0.3.0.PDCCNXM
 vendor/bin/mlipayd@1.1|4c30cfd1b32f99ff3043eadca8e7a4b7b9a00c79
