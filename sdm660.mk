@@ -112,7 +112,8 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
 PRODUCT_PACKAGES += \
-    camera.sdm660
+    camera.sdm660 \
+    libmm-qcamera
 
 # Component overrides
 PRODUCT_COPY_FILES += \
